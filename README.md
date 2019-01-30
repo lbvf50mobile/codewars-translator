@@ -11,6 +11,12 @@ Reading documentations above secially [here](https://github.com/Codewars/codewar
 
 - http://luarocks.github.io/luarocks/releases/ download `v2.4.2.tar.gz ` but for windows
 - and read here [lua instalation for Windows](https://github.com/luarocks/luarocks/wiki/Installation-instructions-for-Windows)
+- here is a `busted` [it's a tesing framework](https://luarocks.org/modules/olivine-labs/busted)
+
+### Summary:
+
+At the `lua.docker` full inforation about lua version. At the codewars Lua works with `LuaRocks` and `Busted` framework. Need to install `LuaRock` on my machine. And then the `codewars.lua` will be clear. 
+
 
 # Lua translations
 
