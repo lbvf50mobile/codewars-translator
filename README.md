@@ -9,6 +9,9 @@
 ## Instalation
 Reading documentations above secially [here](https://github.com/Codewars/codewars-runner-cli/blob/d1c1d8bfb9919ee61d520370484894be27f48739/docker/lua.docker#L13) I fuond that I need two things: `luarocks` and `busted` from this package. `RUN luarocks install busted`
 
+- http://luarocks.github.io/luarocks/releases/ download `v2.4.2.tar.gz ` but for windows
+- and read here [lua instalation for Windows](https://github.com/luarocks/luarocks/wiki/Installation-instructions-for-Windows)
+
 # Lua translations
 
 - https://www.codewars.com/kata/tick-toward
