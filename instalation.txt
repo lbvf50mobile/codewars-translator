@@ -1,0 +1,104 @@
+LuaRocks 2.4.x installer.
+
+
+========================
+== Checking system... ==
+========================
+
+
+Admin privileges available for installing
+Looking for Lua interpreter
+    checking c:\lua
+       Found lua53.exe, testing it...
+Interpreter found, now looking for link libraries...
+    checking for c:\lua\lua5.3.lib
+    checking for c:\lua\lua53.lib
+    checking for c:\lua\lua5.3.dll
+    checking for c:\lua\lua53.dll
+       Found lua53.dll
+Link library found, now looking for headers...
+    checking for c:\lua\include\lua\5.3\lua.h
+    checking for c:\lua\include\lua53\lua.h
+    checking for c:\lua\include\lua5.3\lua.h
+    checking for c:\lua\include\lua.h
+       Found lua.h
+Headers found, checking runtime to use...
+    c:\lua\lua53.exe uses MSVCRT.DLL as runtime
+Runtime check completed.
+Looking for Microsoft toolchain matching runtime MSVCRT and architecture x86_64
+    Cannot auto-detect Visual Studio version from MSVCRT
+    Cannot auto-detect Windows SDK version from MSVCRT
+
+==========================
+== System check results ==
+==========================
+
+Will configure LuaRocks with the following paths:
+LuaRocks        : C:\Program Files (x86)\LuaRocks
+Config file     : C:\Program Files (x86)\LuaRocks\config-5.3.lua
+Rocktree        : c:\lua\systree
+
+Lua interpreter : c:\lua\lua53.exe
+    binaries    : c:\lua
+    libraries   : c:\lua
+    includes    : c:\lua\include
+    architecture: x86_64
+    binary link : lua53.dll with runtime MSVCRT.dll
+
+Compiler        : Microsoft (make sure it is in your path before using LuaRocks)
+
+
+Press <ENTER> to start installing, or press <CTRL>+<C> to abort. Use install /?
+for installation options.
+
+
+============================
+== Installing LuaRocks... ==
+============================
+
+
+Installing LuaRocks in C:\Program Files (x86)\LuaRocks...
+Created LuaRocks command: C:\Program Files (x86)\LuaRocks\luarocks.bat
+Created LuaRocks command: C:\Program Files (x86)\LuaRocks\luarocks-admin.bat
+
+Configuring LuaRocks...
+Created LuaRocks site-config file: C:\Program Files (x86)\LuaRocks\lua\luarocks\
+site_config_5_3.lua
+Created LuaRocks config file: C:\Program Files (x86)\LuaRocks\config-5.3.lua
+
+Creating rocktrees...
+Created system rocktree    : "c:\lua\systree"
+Created local user rocktree: "C:\Users\user\AppData\Roaming\LuaRocks"
+
+Loading registry information for ".rockspec" files
+
+============================
+== LuaRocks is installed! ==
+============================
+
+
+You may want to add the following elements to your paths;
+Lua interpreter;
+  PATH     :   c:\lua
+  PATHEXT  :   .LUA
+LuaRocks;
+  PATH     :   C:\Program Files (x86)\LuaRocks
+  LUA_PATH :   C:\Program Files (x86)\LuaRocks\lua\?.lua;C:\Program Files (x86)\
+LuaRocks\lua\?\init.lua
+Local user rocktree (Note: %APPDATA% is user dependent);
+  PATH     :   %APPDATA%\LuaRocks\bin
+  LUA_PATH :   %APPDATA%\LuaRocks\share\lua\5.3\?.lua;%APPDATA%\LuaRocks\share\l
+ua\5.3\?\init.lua
+  LUA_CPATH:   %APPDATA%\LuaRocks\lib\lua\5.3\?.dll
+System rocktree
+  PATH     :   c:\lua\systree\bin
+  LUA_PATH :   c:\lua\systree\share\lua\5.3\?.lua;c:\lua\systree\share\lua\5.3\?
+\init.lua
+  LUA_CPATH:   c:\lua\systree\lib\lua\5.3\?.dll
+
+Note that the %APPDATA% element in the paths above is user specific and it MUST
+be replaced by its actual value.
+For the current user that value is: C:\Users\user\AppData\Roaming.
+
+
+Press any key to close this window...
