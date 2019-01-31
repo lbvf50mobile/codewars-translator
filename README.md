@@ -14,10 +14,16 @@ Reading documentations above secially [here](https://github.com/Codewars/codewar
 - here is a `busted` [it's a tesing framework](https://luarocks.org/modules/olivine-labs/busted)
 - `INSTALL /LV 5.3 /LUA c:\lua`
 - I add lua 5.3.4 because lua 5.3.5 dose not works. and add *h files from  the tar file.
+- Luarocks 2.4.2 installed, all data wrote to the `LUA_PATH`, `LUA_CPATH`, `Path` windows variables.
+- from the `gitbash` I start  luarocks with a `luarocks.bat`
 
 ### Summary:
 
-At the `lua.docker` full inforation about lua version. At the codewars Lua works with `LuaRocks` and `Busted` framework. Need to install `LuaRock` on my machine. And then the `codewars.lua` will be clear. 
+`2019.01.30 Wednesday Jan`  
+At the `lua.docker` full inforation about lua version. At the codewars Lua works with `LuaRocks` and `Busted` framework. Need to install `LuaRock` on my machine. And then the `codewars.lua` will be clear.   
+
+`2019.01.31 Thursday Jan`  
+`LuaRocks 2.4.2` strats by `luarocks.bat` in `gitbash`. I'm using `Lua 5.3.4` becuase `Lua 5.3.5` dose not works at all.
 
 
 # Lua translations
