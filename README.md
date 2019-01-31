@@ -12,6 +12,8 @@ Reading documentations above secially [here](https://github.com/Codewars/codewar
 - http://luarocks.github.io/luarocks/releases/ download `v2.4.2.tar.gz ` but for windows
 - and read here [lua instalation for Windows](https://github.com/luarocks/luarocks/wiki/Installation-instructions-for-Windows)
 - here is a `busted` [it's a tesing framework](https://luarocks.org/modules/olivine-labs/busted)
+- `INSTALL /LV 5.3 /LUA c:\lua`
+- I add lua 5.3.4 because lua 5.3.5 dose not works. and add *h files from  the tar file.
 
 ### Summary:
 
