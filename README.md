@@ -29,6 +29,7 @@ At the `lua.docker` full inforation about lua version. At the codewars Lua works
 # Lua translations
 
 - https://www.codewars.com/kata/tick-toward
+- https://www.codewars.com/kata/which-are-in
 
 #  In Codewars
 - https://www.codewars.com/kata/51f2b4448cadf20ed0000386 https://www.codewars.com/kumite/5c52f69bbb637958bba592a2/edit 
