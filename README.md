@@ -28,6 +28,8 @@ Reading documentations above secially [here](https://github.com/Codewars/codewar
     - set `Lua 5.3.5` now it's works
     - get new `3.0.4` LuaRocks (it fails)
     - need to have `2.4.2`
+    - https://github.com/luarocks/luarocks/issues/770
+    - going to use `2.4.4`
 
 ### Summary:
 
