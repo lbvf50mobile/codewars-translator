@@ -30,6 +30,7 @@ At the `lua.docker` full inforation about lua version. At the codewars Lua works
 
 - https://www.codewars.com/kata/tick-toward
 - https://www.codewars.com/kata/which-are-in
+- https://www.codewars.com/kata/meeting (`marked 20190202 Monday 16:09`)
 
 #  In Codewars
 - https://www.codewars.com/kata/51f2b4448cadf20ed0000386 https://www.codewars.com/kumite/5c52f69bbb637958bba592a2/edit 
