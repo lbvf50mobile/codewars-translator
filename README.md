@@ -16,6 +16,11 @@ Reading documentations above secially [here](https://github.com/Codewars/codewar
 - I add lua 5.3.4 because lua 5.3.5 dose not works. and add *h files from  the tar file.
 - Luarocks 2.4.2 installed, all data wrote to the `LUA_PATH`, `LUA_CPATH`, `Path` windows variables.
 - from the `gitbash` I start  luarocks with a `luarocks.bat`
+- reading this article https://github.com/luarocks/luarocks/wiki/Using-LuaRocks
+- `luarocks.lua install busted` and `Failed installing dependency`
+- https://stackoverflow.com/questions/8800361/cl-is-not-recognized-as-an-internal-or-external-command
+- https://stackoverflow.com/questions/28913395/luarocks-failed-to-compile-object
+- https://stackoverflow.com/questions/31953769/visual-studio-doesnt-have-cl-exe
 
 ### Summary:
 
