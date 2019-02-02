@@ -32,6 +32,7 @@ Reading documentations above secially [here](https://github.com/Codewars/codewar
     - going to use `2.4.4`
     - running lua rocks in windows `cli`!
     - `IT WORKS!`
+    - **success** `basted.bat test_cases.lua`
 
 ### Summary:
 
@@ -48,7 +49,8 @@ but I cannot install one plugin.
 -`Luarocks` 3.0.4 - dose not works a at all
 - `Luarocks` 2.4.2 with 5.3.5 Lua cannot install `Busted` because it cannot install dependency `say-1.3.1.rockspec` and it cannot load file. `v.1.3.1.tar.gz`.   
 **Success** Using Luarocks `2.4.4`.  
-**TODO** write that 3.0.4 dose not works! 
+**TODO** write that 3.0.4 dose not works!  
+**success** `basted.bat test_cases.lua`
 
 
 # Lua translations
