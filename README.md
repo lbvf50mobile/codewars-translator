@@ -31,6 +31,7 @@ Reading documentations above secially [here](https://github.com/Codewars/codewar
     - https://github.com/luarocks/luarocks/issues/770
     - going to use `2.4.4`
     - running lua rocks in windows `cli`!
+    - `IT WORKS!`
 
 ### Summary:
 
