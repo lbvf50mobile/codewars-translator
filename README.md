@@ -21,6 +21,7 @@ Reading documentations above secially [here](https://github.com/Codewars/codewar
 - https://stackoverflow.com/questions/8800361/cl-is-not-recognized-as-an-internal-or-external-command
 - https://stackoverflow.com/questions/28913395/luarocks-failed-to-compile-object
 - https://stackoverflow.com/questions/31953769/visual-studio-doesnt-have-cl-exe
+- `INSTALL /LV 5.3 /LUA c:\lua /MW`
 
 ### Summary:
 
