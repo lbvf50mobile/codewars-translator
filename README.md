@@ -41,6 +41,8 @@ At the `lua.docker` full inforation about lua version. At the codewars Lua works
 
 `Luarocks` 3.0.4 - fails to install the `busted`. `Luarocks` 2.4.2 works with 5.3.5 lua!
 but I cannot install one plugin.
+-`Luarocks` 3.0.4 - dose not works a at all
+- `Luarocks` 2.4.2 with 5.3.5 Lua cannot install `Busted` because it cannot install dependency `say-1.3.1.rockspec` and it cannot load file. `v.1.3.1.tar.gz`.
 
 
 # Lua translations
