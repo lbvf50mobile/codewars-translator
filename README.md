@@ -22,6 +22,12 @@ Reading documentations above secially [here](https://github.com/Codewars/codewar
 - https://stackoverflow.com/questions/28913395/luarocks-failed-to-compile-object
 - https://stackoverflow.com/questions/31953769/visual-studio-doesnt-have-cl-exe
 - `INSTALL /LV 5.3 /LUA c:\lua /MW`
+    - Rename `Luarocks` in `Luarocks1`
+    - Need to copy headres from `v2.4.2.tar.gz` and rename `src` => `include`
+    - Run `mingw-get.exe`
+    - set `Lua 5.3.5` now it's works
+    - get new `3.0.4` LuaRocks (it fails)
+    - need to have `2.4.2`
 
 ### Summary:
 
@@ -30,6 +36,11 @@ At the `lua.docker` full inforation about lua version. At the codewars Lua works
 
 `2019.01.31 Thursday Jan`  
 `LuaRocks 2.4.2` strats by `luarocks.bat` in `gitbash`. I'm using `Lua 5.3.4` becuase `Lua 5.3.5` dose not works at all.
+
+`2019.02.03 Sunday Feb`
+
+`Luarocks` 3.0.4 - fails to install the `busted`. `Luarocks` 2.4.2 works with 5.3.5 lua!
+but I cannot install one plugin.
 
 
 # Lua translations
