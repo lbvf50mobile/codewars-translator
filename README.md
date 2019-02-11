@@ -50,7 +50,7 @@ but I cannot install one plugin.
 - `Luarocks` 2.4.2 with 5.3.5 Lua cannot install `Busted` because it cannot install dependency `say-1.3.1.rockspec` and it cannot load file. `v.1.3.1.tar.gz`.   
 **Success** Using Luarocks `2.4.4`.  
 **TODO** write that 3.0.4 dose not works!  
-**success** `basted.bat test_cases.lua`
+**success** `busted.bat test_cases.lua`
 
 
 # Lua translations
