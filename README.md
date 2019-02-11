@@ -52,6 +52,10 @@ but I cannot install one plugin.
 **TODO** write that 3.0.4 dose not works!  
 **success** `busted.bat test_cases.lua`
 
+`2019.02.11 Monday Feb`
+
+- work with tick-toward
+
 
 # Lua translations
 
