@@ -65,6 +65,7 @@ but I cannot install one plugin.
 - https://www.codewars.com/kata/51fda2d95d6efda45e00004e (`solve and translate 20190208`)
 - https://www.codewars.com/kata/does-my-number-look-big-in-this/ruby (`add 20190211`)
 - https://www.codewars.com/kata/5893e0c41a88085c330000a0 (`very simple 20190228 Thursday`) **VERY SIMPLE**
+- https://www.codewars.com/kata/find-numbers-which-are-divisible-by-given-number/train/javascript (`2019.03.08 Friday`)
 
 #  In Codewars
 - https://www.codewars.com/kata/51f2b4448cadf20ed0000386 https://www.codewars.com/kumite/5c52f69bbb637958bba592a2/edit 
