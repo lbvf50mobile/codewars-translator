@@ -12,30 +12,36 @@ end
 input = <<-FOO
 Test.assertSimilar(countBy(1,10), [1,2,3,4,5,6,7,8,9,10], "Array does not match")
 Test.assertSimilar(countBy(2,5), [2,4,6,8,10], "Array does not match")
+Test.assertSimilar(countBy(3,7), [3,6,9,12,15,18,21], "Array does not match")
+Test.assertSimilar(countBy(50,5), [50,100,150,200,250], "Array does not match")
+Test.assertSimilar(countBy(100,6), [100,200,300,400,500,600], "Array does not match")
 FOO
 output = <<-FOO
 output = run_shell args: ['1','10']; expect(output).to include('[1,2,3,4,5,6,7,8,9,10]')
 output = run_shell args: ['2','5']; expect(output).to include('[2,4,6,8,10]')
+output = run_shell args: ['3','7']; expect(output).to include('[3,6,9,12,15,18,21]')
+output = run_shell args: ['50','5']; expect(output).to include('[50,100,150,200,250]')
+output = run_shell args: ['100','6']; expect(output).to include('[100,200,300,400,500,600]')
 FOO
 
 
-describe "Solution" do
-    it "should test for something" do
+describe "Static tests with Auto test" do
+  it "Static tests" do
+    Test.assert_equals(auto_bash(input), output)
+  end
+  it "Auto test" do
+    150.times do
+      a,b = rand(1..152), rand(1..152)
+      a1,b1 = rand(1..152), rand(1..152)
+      output = %Q{output = run_shell args: ['#{a}','#{b}']; expect(output).to include('[#{a.step(by: a).take(b).join(?,)}]')
+output = run_shell args: ['#{a1}','#{b1}']; expect(output).to include('[#{a1.step(by: a1).take(b1).join(?,)}]')} + "\n"
+
+input = %Q{Test.assertSimilar(countBy(#{a},#{b}), [#{a.step(by: a).take(b).join(?,)}], "Array does not match") 
+Test.assertSimilar(countBy(#{a1},#{b1}), [#{a1.step(by: a1).take(b1).join(?,)}], "Array does not match")}
       Test.assert_equals(auto_bash(input), output)
     end
-    it "auto test" do
-      50.times do
-        a,b = rand(1.52), rand(1..52)
-        a1,b1 = rand(1..52), rand(1..52)
-        output = %Q{output = run_shell args: ['#{a}','#{b}']; expect(output).to include('[#{a.step(by: a).take(b).join(?,)}]')
-  output = run_shell args: ['#{a1}','#{b1}']; expect(output).to include('[#{a1.step(by: a1).take(b1).join(?,)}]')} + "\n"
-  
-  input = %Q{Test.assertSimilar(countBy(#{a},#{b}), [#{a.step(by: a).take(b).join(?,)}], "Array does not match") 
-  Test.assertSimilar(countBy(#{a1},#{b1}), [#{a1.step(by: a1).take(b1).join(?,)}], "Array does not match")}
-        Test.assert_equals(auto_bash(input), output)
-      end
-     end   
-  end
+   end   
+end
 
 def auto_bash x
     # Make it green, then make it clean :) 
