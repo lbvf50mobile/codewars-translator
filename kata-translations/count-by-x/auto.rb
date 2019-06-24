@@ -26,6 +26,8 @@ def auto_bash x
     .join("\n") + "\n"
 end
 
+# p input
+# p input.split("\n")
 puts auto_bash(input)
 
 # https://www.codewars.com/kata/5d10941f0fb98b002821acc1/edit/ruby
