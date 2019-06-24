@@ -15,7 +15,17 @@ def auto x
     }
     .join("\n") + "\n"
 end
+def auto_bash x
+    x.split("\n")
+    .map{|x| 
+        r = /.*countBy\(([0-9]+)\,([0-9]+)\)\, \[([0-9,]+)\].*/
+        x.gsub(r){ 
+            "output = run_shell args: ['#{$1}','#{$2}']; expect(output).to include('[#{$3}]')" 
+        }
+    }
+    .join("\n") + "\n"
+end
 
-puts auto(input)
+puts auto_bash(input)
 
 # https://www.codewars.com/kata/5d10941f0fb98b002821acc1/edit/ruby
