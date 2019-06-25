@@ -13,7 +13,6 @@ return {
       words = {}
       for word in str:gmatch("[^ ]+") do table.insert(words, word) end
       words = reverse(words)
-      for k,v in pairs(words) do print(v) end
       implode = function (delimiter, list)
         local len = #list
         if len == 0 then

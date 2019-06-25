@@ -11,7 +11,7 @@ def auto x
     x.split("\n")
     .map{|x| 
         r = /.*"(.+)".*"(.+)".*/
-        x.gsub(r){ "assert.are.same('#{$2}', solution.reverse_words('#{$1}'))" }
+        x.gsub(r){ "assert.are.same(\"#{$2}\", solution.reverse_words(\"#{$1}\"))" }
     }
     .join("\n") + "\n"
 end
