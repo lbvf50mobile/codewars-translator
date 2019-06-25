@@ -8,6 +8,8 @@ if( ARGV.include?('--help'))
     exit
 end
 
+puts "Lua code runner. for CodeWars.com kata\n\n"
+puts "--help for help\n\n"
 
 # Set default
 test_file = 'test_cases.lua'
