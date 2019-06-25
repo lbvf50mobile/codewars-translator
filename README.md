@@ -81,7 +81,9 @@ Obj.spam(Obj)
 ```
 
 @djapananda
-https://github.com/Yonaba/Moses
+https://github.com/Yonaba/Moses https://github.com/axmat/lodash.lua
+
+Just use `test_runner.sh` in the `template` to get kata works.
 
 
 # Lua translations
