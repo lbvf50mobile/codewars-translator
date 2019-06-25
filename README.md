@@ -56,6 +56,12 @@ but I cannot install one plugin.
 
 - work with tick-toward
 
+`2019.06.25 Monday June`
+
+- I want to run, test that dose not run for a long while.
+- `cd cd kata-translations/tick-toward/`
+- `busted.bat test-cases.lua`
+
 
 # Lua translations
 
