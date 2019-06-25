@@ -61,6 +61,8 @@ but I cannot install one plugin.
 - I want to run, test that dose not run for a long while.
 - `cd cd kata-translations/tick-toward/`
 - `busted.bat test-cases.lua`
+- `cp -r template/ reversed-words/`
+- https://www.codewars.com/kata/reversed-words/javascript
 
 
 # Lua translations
