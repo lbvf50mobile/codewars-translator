@@ -1,4 +1,4 @@
-During translating this ["Count by X" Kata](https://www.codewars.com/kata/count-by-x) to the `BASH` language.
+During translating ["Count by X" Kata](https://www.codewars.com/kata/count-by-x) to the `BASH` language.
 
 Required a function that translates this kind of `JS` muliline string:
 ```
