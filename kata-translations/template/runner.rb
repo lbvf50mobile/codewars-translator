@@ -8,16 +8,23 @@ if( ARGV.include?('--help'))
     exit
 end
 
-keys = {
-    '--sample_test' => {file: 'sample_test_cases.lua', var:'test_file'},
-    '--test' => {file: 'test_cases.lua', var: 'test_file'},
-    '---solution' => {file: 'solution.lua', var:'solution_file'},
-    '--solution_setup' => {file: 'solution_setup.lua', var: 'solution_file'},
-}
 
 # Set default
 test_file = 'test_cases.lua'
 solution_file = 'solution.lua'
+
+{
+    '--sample_test' => {file: 'sample_test_cases.lua', var:'test_file'},
+    '--test' => {file: 'test_cases.lua', var: 'test_file'},
+    '---solution' => {file: 'solution.lua', var:'solution_file'},
+    '--solution_setup' => {file: 'solution_setup.lua', var: 'solution_file'},
+}.map{|key,hash| 
+    if(ARGV.include?(key))
+        eval("#{hahs[:var]}='#{hash[:file]}'")
+    end
+}
+
+p solution_file
 
 `[ "$(ls -A /tmp)" ] && rm src/* || echo "Empty"`
 `cp #{solution_file} src/solution.lua`
