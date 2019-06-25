@@ -18,9 +18,9 @@ solution_file = 'solution.lua'
     '--test' => {file: 'test_cases.lua', var: 'test_file'},
     '---solution' => {file: 'solution.lua', var:'solution_file'},
     '--solution_setup' => {file: 'solution_setup.lua', var: 'solution_file'},
-}.map{|key,hash| 
+}.map{|(key,hash)|
     if(ARGV.include?(key))
-        eval("#{hahs[:var]}='#{hash[:file]}'")
+        eval("#{hash[:var]}='#{hash[:file]}'")
     end
 }
 

@@ -1,3 +1,4 @@
+print('---solution_setup.lua')
 return {
     count_by = function(step,size)
       -- Make it green, then make it clean :)

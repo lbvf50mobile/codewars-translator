@@ -1,3 +1,4 @@
+print('---solution.lua')
 return {
     count_by = function(step,size)
       ans = {}
