@@ -1,4 +1,3 @@
-print("---sample_test_cases.lua")
 local solution = require 'solution'
 describe("Base test", function()
   it("From examples", function()

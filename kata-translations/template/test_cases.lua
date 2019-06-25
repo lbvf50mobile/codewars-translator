@@ -1,4 +1,3 @@
-print("---test_cases.lua")
 local solution = require 'solution'
 local s = function(step,size)
     ans = {}
