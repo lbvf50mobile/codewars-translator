@@ -64,6 +64,25 @@ but I cannot install one plugin.
 - `cp -r template/ reversed-words/`
 - https://www.codewars.com/kata/reversed-words/javascript
 
+@shaman_s_bubom
+```
+local Obj = {}
+function Obj.spam(self)
+    print(self)
+end
+
+function Obj:spam2()
+    print(self)
+end
+
+Obj:spam()  -- Obj['spam'](Obj)
+Obj:spam2()
+Obj.spam(Obj)
+```
+
+@djapananda
+https://github.com/Yonaba/Moses
+
 
 # Lua translations
 
