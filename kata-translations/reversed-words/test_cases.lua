@@ -78,7 +78,7 @@ describe("Auto test", function()
   it("Generate tests", function()
     for k=1,40,1 do
       local str = b.random_string(math.random(0,300))
-      assert.are.same(solution.reverse_words("kata editor"), b.reverse_words("kata editor"))
+      assert.are.same(solution.reverse_words("kata editor"), b.reverse_words("kata editor"), str ..  " wasn't reversed correctly")
     end
   end)
 end)
