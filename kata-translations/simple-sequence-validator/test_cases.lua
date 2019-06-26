@@ -1,0 +1,10 @@
+local solution = require 'solution'
+describe("Tests", function()
+  it("Static", function()
+    assert.are.same("world! hello", solution.reverse_words("hello world!"))
+    assert.are.same("this like speak doesn't yoda", solution.reverse_words("yoda doesn't speak like this"))
+    assert.are.same("foobar", solution.reverse_words("foobar"))
+    assert.are.same("editor kata", solution.reverse_words("kata editor"))
+    assert.are.same("boat your row row row", solution.reverse_words("row row row your boat"))
+  end)
+end)
