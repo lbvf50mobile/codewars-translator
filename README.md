@@ -89,6 +89,7 @@ Just use `test_runner.sh` in the `template` to get kata works.
 
 - Ruby translation for: https://www.codewars.com/kata/simple-sequence-validator/javascript
 - Lua translation for; https://www.codewars.com/kata/reversed-words
+- ![@Snusmumriken](imgs/photo_2019-06-26_22-01-02.jpg)
 
 
 # Lua translations
