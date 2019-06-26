@@ -1,4 +1,5 @@
 // https://www.codewars.com/kata/51c8991dee245d7ddf00000e
+// https://www.codewars.com/kumite/5d132b9bbac0b8001e3d9d18?sel=5d132b9bbac0b8001e3d9d18
 let reverseWords = x => x.split` `.reverse().join` `;
 describe("reverseWords",function(){
     it("should work for some examples", function(){

@@ -88,6 +88,7 @@ Just use `test_runner.sh` in the `template` to get kata works.
 `Tuesday 2019.06.26 June`
 
 - Ruby translation for: https://www.codewars.com/kata/simple-sequence-validator/javascript
+- Lua translation for; https://www.codewars.com/kata/reversed-words
 
 
 # Lua translations
