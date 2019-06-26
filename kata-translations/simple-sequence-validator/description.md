@@ -1,42 +1,33 @@
-Create a function with two arguments that will return a list of length (n) with multiples of (x). 
+Create a function that will return true if all numbers in the sequence follow the same counting pattern. If the sequence of numbers does not follow the same pattern, the function should return false.
 
-Assume both the given number and the number of times to count will be positive numbers greater than 0. 
+Sequences will be presented in an array of varied length. Each array will have a minimum of 3 numbers in it.
 
-Return the results as an array (or list in Python, Haskell or Elixir).
+The sequences are all simple and will not step up in varying increments such as a Fibonacci sequence.
 
 Examples:
-```csharp
-Kata.CountBy(1,10) // should return new int[] {1,2,3,4,5,6,7,8,9,10}
-Kata.CountBy(2,5) // should return new int[] {2,4,6,8,10}
-```
 ```javascript
-countBy(1,10) === [1,2,3,4,5,6,7,8,9,10]
-countBy(2,5) === [2,4,6,8,10]
-```
-```coffeescript
-countBy(1,10) == [1,2,3,4,5,6,7,8,9,10]
-countBy(2,5) == [2,4,6,8,10]
-```
-```python
-count_by(1,10) #should return [1,2,3,4,5,6,7,8,9,10]
-count_by(2,5) #should return [2,4,6,8,10]
+validateSequence([1,2,3,4,5,6,7,8,9]) === true
+validateSequence([1,2,3,4,5,8,7,8,9]) === false
+validateSequence([2,4,6,8,10]) === true
+validateSequence([0,2,4,6,8]) === true
+validateSequence([1,3,5,7,9]) === true
+validateSequence([1,2,4,8,16,32,64]) === false
+validateSequence([0,1,1,2,3,5,8,13,21,34]) === false
 ```
 ```ruby
-count_by(1,10) #should return [1,2,3,4,5,6,7,8,9,10]
-count_by(2,5) #should return [2,4,6,8,10]
+validate_sequence([1,2,3,4,5,6,7,8,9]) === true
+validate_sequence([1,2,3,4,5,8,7,8,9]) === false
+validate_sequence([2,4,6,8,10]) === true
+validate_sequence([0,2,4,6,8]) === true
+validate_sequence([1,3,5,7,9]) === true
+validate_sequence([1,2,4,8,16,32,64]) === false
+validate_sequence([0,1,1,2,3,5,8,13,21,34]) === false
 ```
-```haskell
-countBy 1 10 `shouldBe` [1,2,3,4,5,6,7,8,9,10]
-countBy 2  5 `shouldBe` [2,4,6,8,10]
+```python
+validate_sequence([1, 2, 3, 4, 5, 8, 7, 8, 9]) # False
+validate_sequence([2, 8, 6, 7, 4, 3, 1, 5, 9]) # False
+validate_sequence([1, 2, 3, 4, 5, 6, 7, 8, 9]) # True
+validate_sequence([0, 1, 2, 3, 4, 5, 6, 7, 8]) # True
+validate_sequence([1, 3, 5, 7, 9, 11, 13, 15]) # True
+validate_sequence([1, 3, 5, 7, 8, 12, 14, 16]) # False
 ```
-```elixir
-count_by(1, 10) == [1,2,3,4,5,6,7,8,9,10]
-count_by(2, 5) == [2,4,6,8,10]
-```
-```solidity
-countBy(1,10) // should return [1,2,3,4,5,6,7,8,9,10]
-countBy(2,5) // should return [2,4,6,8,10]
-```
-```lua
-count_by(1,10) -- should return {1,2,3,4,5,6,7,8,9,10}
-count_by(2,5) -- should return {2,4,6,8,10}
