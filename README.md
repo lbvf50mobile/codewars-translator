@@ -85,11 +85,21 @@ https://github.com/Yonaba/Moses https://github.com/axmat/lodash.lua
 
 Just use `test_runner.sh` in the `template` to get kata works.
 
-`Tuesday 2019.06.26 June`
+`Wednesday 2019.06.26 June`
 
 - Ruby translation for: https://www.codewars.com/kata/simple-sequence-validator/javascript
 - Lua translation for: https://www.codewars.com/kata/reversed-words
 - ![@Snusmumriken](imgs/photo_2019-06-26_22-01-02.jpg), https://www.lua.org/pil/11.6.html by  @Snusmumriken
+
+`Thursday 2019.06.27 June`
+
+- >The reference solution is available in users' solutions.
+describe "Asert Similar" do - typo.
+it "Auto true" do - in mosts cases random tests exist to prevent cheating, so the order of expected andwers should be random. ("Auto true" seems a bit weird for a header text, although I don't pay much attention to headers.)
+
+https://www.codewars.com/users/Unnamed
+
+- fix the https://www.codewars.com/kata/simple-sequence-validator/javascript
 
 
 # Lua translations
