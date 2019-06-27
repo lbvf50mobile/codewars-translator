@@ -100,7 +100,7 @@ it "Auto true" do - in mosts cases random tests exist to prevent cheating, so th
 https://www.codewars.com/users/Unnamed 
 
 - fix the https://www.codewars.com/kata/simple-sequence-validator/javascript
-- `ruby kata-boom.rb https://www.codewars.com/kata/simple-fun-number-63-shape-area/ruby`
+- `ruby kata-boom.rb https://www.codewars.com/kata/simple-fun-number-63-shape-area/ruby` traslated
 
 
 # Lua translations
@@ -110,8 +110,9 @@ https://www.codewars.com/users/Unnamed
 - https://www.codewars.com/kata/meeting (`marked 20190202 Satruday 16:09`)
 - https://www.codewars.com/kata/51fda2d95d6efda45e00004e (`solve and translate 20190208`)
 - https://www.codewars.com/kata/does-my-number-look-big-in-this/ruby (`add 20190211`)
-- https://www.codewars.com/kata/5893e0c41a88085c330000a0 (`very simple 20190228 Thursday`) **VERY SIMPLE**
+- https://www.codewars.com/kata/5893e0c41a88085c330000a0 (`very simple 20190228 Thursday`, `translated 20190627 Thursday`) **VERY SIMPLE**
 - https://www.codewars.com/kata/find-numbers-which-are-divisible-by-given-number/train/javascript (`2019.03.08 Friday`)
+- https://www.codewars.com/kata/reversed-words (`translated 20190626 Wednesday`)
 
 #  In Codewars
 - https://www.codewars.com/kata/51f2b4448cadf20ed0000386 https://www.codewars.com/kumite/5c52f69bbb637958bba592a2/edit 
