@@ -1,4 +1,4 @@
-puts "Create cata 'kata-boom.rb url'"
+puts "Create kata 'kata-boom.rb url'"
 
 exit "please eneter url" if ARGV[0].empty?
 
