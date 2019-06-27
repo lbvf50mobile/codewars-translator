@@ -1,33 +1,21 @@
 local solution = require 'solution'
-local s = function(step,size)
-    ans = {}
-    for value = step,step*size,step 
-    do 
-       table.insert(ans,value)
-    end
-    return ans
-  end
-describe("Base test", function()
-  it("From examples", function()
-    assert.are.same({1,2,3,4,5,6,7,8,9,10}, solution.count_by(1,10))
-    assert.are.same({2,4,6,8,10}, solution.count_by(2,5))
+-- let shapeArea = x => Math.pow(x,2) + Math.pow(x-1,2);
+local s = function(x) return math.pow(x,2) + math.pow(x-1,2) end
+describe("Shape Area test set", function()
+  it("Static tests", function()
+    assert.are.same(5, solution.shape_area(2))
+    assert.are.same(13, solution.shape_area(3))
+    assert.are.same(1, solution.shape_area(1))
+    assert.are.same(41, solution.shape_area(5))
+
+    assert.are.same(s(2), solution.shape_area(2))
+    assert.are.same(s(3), solution.shape_area(3))
+    assert.are.same(s(1), solution.shape_area(1))
+    assert.are.same(s(5), solution.shape_area(5))
   end)
-end)
-describe("Base test #2", function()
-  it("More examples", function()
-    assert.are.same({1,2,3,4,5,6,7,8,9,10}, solution.count_by(1,10))
-    assert.are.same({2,4,6,8,10}, solution.count_by(2,5))
-    assert.are.same({1,2,3,4,5,6,7,8,9,10}, solution.count_by(1,10))
-    assert.are.same({2,4,6,8,10}, solution.count_by(2,5))
-    assert.are.same({3,6,9,12,15,18,21}, solution.count_by(3,7))
-    assert.are.same({50,100,150,200,250}, solution.count_by(50,5))
-    assert.are.same({100,200,300,400,500,600}, solution.count_by(100,6))
-  end)
-    it("Auto examples", function()
-    for x = 1,200 do
-      local step = math.random(1,80)
-      local size = math.random(1,80)
-      assert.are.same(s(step,size), solution.count_by(step,size))
+  it("Auto tests", function()
+    for i=1,3,1 do
+      assert.are.same(s(i), solution.shape_area(i))
     end
   end)
 end)
