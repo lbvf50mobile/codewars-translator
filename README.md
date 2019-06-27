@@ -97,7 +97,7 @@ Just use `test_runner.sh` in the `template` to get kata works.
 describe "Asert Similar" do - typo.
 it "Auto true" do - in mosts cases random tests exist to prevent cheating, so the order of expected andwers should be random. ("Auto true" seems a bit weird for a header text, although I don't pay much attention to headers.)
 
-https://www.codewars.com/users/Unnamed
+https://www.codewars.com/users/Unnamed 
 
 - fix the https://www.codewars.com/kata/simple-sequence-validator/javascript
 
