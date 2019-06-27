@@ -100,6 +100,7 @@ it "Auto true" do - in mosts cases random tests exist to prevent cheating, so th
 https://www.codewars.com/users/Unnamed 
 
 - fix the https://www.codewars.com/kata/simple-sequence-validator/javascript
+- `ruby kata-boom.rb https://www.codewars.com/kata/simple-fun-number-63-shape-area/ruby`
 
 
 # Lua translations
