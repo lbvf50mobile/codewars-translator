@@ -101,6 +101,7 @@ https://www.codewars.com/users/Unnamed
 
 - fix the https://www.codewars.com/kata/simple-sequence-validator/javascript
 - `ruby kata-boom.rb https://www.codewars.com/kata/simple-fun-number-63-shape-area/ruby` traslated
+- https://www.codewars.com/kata/playing-with-digits/ruby solved today, want to translate. 
 
 
 # Lua translations
@@ -113,6 +114,7 @@ https://www.codewars.com/users/Unnamed
 - https://www.codewars.com/kata/5893e0c41a88085c330000a0 (`very simple 20190228 Thursday`, `translated 20190627 Thursday`) **VERY SIMPLE**
 - https://www.codewars.com/kata/find-numbers-which-are-divisible-by-given-number/train/javascript (`2019.03.08 Friday`)
 - https://www.codewars.com/kata/reversed-words (`translated 20190626 Wednesday`)
+- https://www.codewars.com/kata/playing-with-digits/ruby (`solved today want to translate 20190627 Thursday`)
 
 #  In Codewars
 - https://www.codewars.com/kata/51f2b4448cadf20ed0000386 https://www.codewars.com/kumite/5c52f69bbb637958bba592a2/edit 
