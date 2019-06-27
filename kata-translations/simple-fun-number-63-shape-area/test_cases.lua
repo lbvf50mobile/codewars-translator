@@ -14,7 +14,7 @@ describe("Shape Area test set", function()
     assert.are.same(s(5), solution.shape_area(5))
   end)
   it("Auto tests", function()
-    for i=1,3,1 do
+    for i=1,10000,1 do
       assert.are.same(s(i), solution.shape_area(i))
     end
   end)
