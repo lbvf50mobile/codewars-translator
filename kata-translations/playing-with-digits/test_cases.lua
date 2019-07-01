@@ -91,4 +91,11 @@ describe("Playing with Digits hidden test cases", function()
     assert.are.same(s(132921, 3), solution.dig_pow(132921, 3))
     assert.are.same(s(10383, 6), solution.dig_pow(10383, 6))
   end)
+  it("Auto tests", function()
+    for power=1,6,1 do
+      for number=80,1900,1 do
+        assert.are.same(s(number, power), solution.dig_pow(number, power))
+      end
+    end
+  end)
 end)
