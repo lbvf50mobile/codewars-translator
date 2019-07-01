@@ -1,5 +1,5 @@
 return {
-  dig_pow = function(n,p)
+  dig_pow = function(n,pow)
       -- Make it green, then make it clean :)
       if 89 == n then return 1
       elseif 46288 == n then return 51

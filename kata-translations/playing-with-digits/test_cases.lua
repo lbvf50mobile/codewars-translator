@@ -1,21 +1,15 @@
 local solution = require 'solution'
--- let shapeArea = x => Math.pow(x,2) + Math.pow(x-1,2);
-local s = function(x) return math.pow(x,2) + math.pow(x-1,2) end
-describe("Shape Area test set", function()
+describe("Playing with Digits sample test cases", function()
   it("Static tests", function()
-    assert.are.same(5, solution.shape_area(2))
-    assert.are.same(13, solution.shape_area(3))
-    assert.are.same(1, solution.shape_area(1))
-    assert.are.same(41, solution.shape_area(5))
-
-    assert.are.same(s(2), solution.shape_area(2))
-    assert.are.same(s(3), solution.shape_area(3))
-    assert.are.same(s(1), solution.shape_area(1))
-    assert.are.same(s(5), solution.shape_area(5))
+    assert.are.same(1, solution.dig_pow(89, 1))
+    assert.are.same(-1, solution.dig_pow(92, 1))
+    assert.are.same(51, solution.dig_pow(46288, 3))
   end)
-  it("Auto tests", function()
-    for i=1,10000,1 do
-      assert.are.same(s(i), solution.shape_area(i))
-    end
+end)
+describe("Playing with Digits hidden test cases", function()
+  it("Static tests", function()
+    assert.are.same(1, solution.dig_pow(89, 1))
+    assert.are.same(-1, solution.dig_pow(92, 1))
+    assert.are.same(51, solution.dig_pow(46288, 3))
   end)
 end)
