@@ -1,26 +1,145 @@
-# Task
- Below we will define what and n-interesting polygon is and your task is to find its area for a given n.
+Some numbers have funny properties. For example:
 
- A 1-interesting polygon is just a square with a side of length 1. An n-interesting polygon is obtained by taking the n - 1-interesting polygon and appending 1-interesting polygons to its rim side by side. You can see the 1-, 2- and 3-interesting polygons in the picture below.
+> 89 --> 8¹ + 9² = 89 * 1
 
- ![](https://files.gitter.im/myjinxin2015/Gwsw/blob)
+> 695 --> 6² + 9³ + 5⁴= 1390 = 695 * 2
 
-# Example
+> 46288 --> 4³ + 6⁴+ 2⁵ + 8⁶ + 8⁷ = 2360688 = 46288 * 51
 
- For `n = 1`, the output should be `1`;
- 
- For `n = 2`, the output should be `5`;
- 
- For `n = 3`, the output should be `13`.
+Given a positive integer n written as abcd... (a, b, c, d... being digits) and a positive integer p 
+- we want to find a positive integer k, if it exists, such as the sum of the digits of n taken to the successive powers of p is equal to k * n. 
 
-# Input/Output
+In other words:
 
 
- - `[input]` integer `n`
+> Is there an integer k such as : (a ^ p + b ^ (p+1) + c ^(p+2) + d ^ (p+3) + ...) = n * k
 
-    Constraints: `1 ≤ n < 10000.`
-    
+If it is the case we will return k, if not return -1.
 
- - `[output]` an integer
+**Note**: n and p will always be given as strictly positive integers.
 
-   The area of the n-interesting polygon.
+```julia
+dig_pow(89, 1) should return 1 since 8¹ + 9² = 89 = 89 * 1
+dig_pow(92, 1) should return -1 since there is no k such as 9¹ + 2² equals 92 * k
+dig_pow(695, 2) should return 2 since 6² + 9³ + 5⁴= 1390 = 695 * 2
+dig_pow(46288, 3) should return 51 since 4³ + 6⁴+ 2⁵ + 8⁶ + 8⁷ = 2360688 = 46288 * 51
+```
+```rust
+dig_pow(89, 1) should return 1 since 8¹ + 9² = 89 = 89 * 1
+dig_pow(92, 1) should return -1 since there is no k such as 9¹ + 2² equals 92 * k
+dig_pow(695, 2) should return 2 since 6² + 9³ + 5⁴= 1390 = 695 * 2
+dig_pow(46288, 3) should return 51 since 4³ + 6⁴+ 2⁵ + 8⁶ + 8⁷ = 2360688 = 46288 * 51
+```
+```ruby
+dig_pow(89, 1) should return 1 since 8¹ + 9² = 89 = 89 * 1
+dig_pow(92, 1) should return -1 since there is no k such as 9¹ + 2² equals 92 * k
+dig_pow(695, 2) should return 2 since 6² + 9³ + 5⁴= 1390 = 695 * 2
+dig_pow(46288, 3) should return 51 since 4³ + 6⁴+ 2⁵ + 8⁶ + 8⁷ = 2360688 = 46288 * 51
+```
+```crystal
+dig_pow(89, 1) should return 1 since 8¹ + 9² = 89 = 89 * 1
+dig_pow(92, 1) should return -1 since there is no k such as 9¹ + 2² equals 92 * k
+dig_pow(695, 2) should return 2 since 6² + 9³ + 5⁴= 1390 = 695 * 2
+dig_pow(46288, 3) should return 51 since 4³ + 6⁴+ 2⁵ + 8⁶ + 8⁷ = 2360688 = 46288 * 51
+```
+```python
+dig_pow(89, 1) should return 1 since 8¹ + 9² = 89 = 89 * 1
+dig_pow(92, 1) should return -1 since there is no k such as 9¹ + 2² equals 92 * k
+dig_pow(695, 2) should return 2 since 6² + 9³ + 5⁴= 1390 = 695 * 2
+dig_pow(46288, 3) should return 51 since 4³ + 6⁴+ 2⁵ + 8⁶ + 8⁷ = 2360688 = 46288 * 51
+```
+```csharp
+digPow(89, 1) should return 1 since 8¹ + 9² = 89 = 89 * 1
+digPow(92, 1) should return -1 since there is no k such as 9¹ + 2² equals 92 * k
+digPow(695, 2) should return 2 since 6² + 9³ + 5⁴= 1390 = 695 * 2
+digPow(46288, 3) should return 51 since 4³ + 6⁴+ 2⁵ + 8⁶ + 8⁷ = 2360688 = 46288 * 51
+```
+```fsharp
+digPow(89, 1) should return 1 since 8¹ + 9² = 89 = 89 * 1
+digPow(92, 1) should return -1 since there is no k such as 9¹ + 2² equals 92 * k
+digPow(695, 2) should return 2 since 6² + 9³ + 5⁴= 1390 = 695 * 2
+digPow(46288, 3) should return 51 since 4³ + 6⁴+ 2⁵ + 8⁶ + 8⁷ = 2360688 = 46288 * 51
+```
+```ocaml
+digPow(89, 1) should return 1 since 8¹ + 9² = 89 = 89 * 1
+digPow(92, 1) should return -1 since there is no k such as 9¹ + 2² equals 92 * k
+digPow(695, 2) should return 2 since 6² + 9³ + 5⁴= 1390 = 695 * 2
+digPow(46288, 3) should return 51 since 4³ + 6⁴+ 2⁵ + 8⁶ + 8⁷ = 2360688 = 46288 * 51
+```
+```php
+digPow(89, 1) should return 1 since 8¹ + 9² = 89 = 89 * 1
+digPow(92, 1) should return -1 since there is no k such as 9¹ + 2² equals 92 * k
+digPow(695, 2) should return 2 since 6² + 9³ + 5⁴= 1390 = 695 * 2
+digPow(46288, 3) should return 51 since 4³ + 6⁴+ 2⁵ + 8⁶ + 8⁷ = 2360688 = 46288 * 51
+```
+```cpp
+digPow(89, 1) should return 1 since 8¹ + 9² = 89 = 89 * 1
+digPow(92, 1) should return -1 since there is no k such as 9¹ + 2² equals 92 * k
+digPow(695, 2) should return 2 since 6² + 9³ + 5⁴= 1390 = 695 * 2
+digPow(46288, 3) should return 51 since 4³ + 6⁴+ 2⁵ + 8⁶ + 8⁷ = 2360688 = 46288 * 51
+```
+```java
+digPow(89, 1) should return 1 since 8¹ + 9² = 89 = 89 * 1
+digPow(92, 1) should return -1 since there is no k such as 9¹ + 2² equals 92 * k
+digPow(695, 2) should return 2 since 6² + 9³ + 5⁴= 1390 = 695 * 2
+digPow(46288, 3) should return 51 since 4³ + 6⁴+ 2⁵ + 8⁶ + 8⁷ = 2360688 = 46288 * 51
+```
+```javascript
+digPow(89, 1) should return 1 since 8¹ + 9² = 89 = 89 * 1
+digPow(92, 1) should return -1 since there is no k such as 9¹ + 2² equals 92 * k
+digPow(695, 2) should return 2 since 6² + 9³ + 5⁴= 1390 = 695 * 2
+digPow(46288, 3) should return 51 since 4³ + 6⁴+ 2⁵ + 8⁶ + 8⁷ = 2360688 = 46288 * 51
+```
+```coffeescript
+digPow(89, 1) should return 1 since 8¹ + 9² = 89 = 89 * 1
+digPow(92, 1) should return -1 since there is no k such as 9¹ + 2² equals 92 * k
+digPow(695, 2) should return 2 since 6² + 9³ + 5⁴= 1390 = 695 * 2
+digPow(46288, 3) should return 51 since 4³ + 6⁴+ 2⁵ + 8⁶ + 8⁷ = 2360688 = 46288 * 51
+```
+```go
+digPow(89, 1) should return 1 since 8¹ + 9² = 89 = 89 * 1
+digPow(92, 1) should return -1 since there is no k such as 9¹ + 2² equals 92 * k
+digPow(695, 2) should return 2 since 6² + 9³ + 5⁴= 1390 = 695 * 2
+digPow(46288, 3) should return 51 since 4³ + 6⁴+ 2⁵ + 8⁶ + 8⁷ = 2360688 = 46288 * 51
+```
+```haskell
+digpow 89 1 should return 1 since 8¹ + 9² = 89 = 89 * 1
+digpow 92 1 should return -1 since there is no k such as 9¹ + 2² equals 92 * k
+digpow 695 2 should return 2 since 6² + 9³ + 5⁴= 1390 = 695 * 2
+digpow 46288 3 should return 51 since 4³ + 6⁴+ 2⁵ + 8⁶ + 8⁷ = 2360688 = 46288 * 51
+```
+```clojure
+dig-pow 89 1 should return 1 since 8¹ + 9² = 89 = 89 * 1
+dig-pow 92 1 should return -1 since there is no k such as 9¹ + 2² equals 92 * k
+dig-pow 695 2 should return 2 since 6² + 9³ + 5⁴= 1390 = 695 * 2
+dig-pow 46288 3 should return 51 since 4³ + 6⁴+ 2⁵ + 8⁶ + 8⁷ = 2360688 = 46288 * 51
+```
+```kotlin
+digPow(89, 1) should return 1 since 8¹ + 9² = 89 = 89 * 1
+digPow(92, 1) should return -1 since there is no k such as 9¹ + 2² equals 92 * k
+digPow(695, 2) should return 2 since 6² + 9³ + 5⁴= 1390 = 695 * 2
+digPow(46288, 3) should return 51 since 4³ + 6⁴+ 2⁵ + 8⁶ + 8⁷ = 2360688 = 46288 * 51
+```
+```nasm
+mov edi, 89
+mov esi, 1
+call dig_pow  ; EAX <- 1 since 8¹ + 9² = 89 = 89 * 1
+
+mov edi, 92
+mov esi, 1
+call dig_pow  ; EAX <- -1 since there is no k such as 9¹ + 2² equals 92 * k
+
+mov edi, 695
+mov esi, 2
+call dig_pow  ; EAX <- 2 since 6² + 9³ + 5⁴= 1390 = 695 * 2
+
+mov edi, 46288
+mov esi, 3
+call dig_pow  ; EAX <- 51 since 4³ + 6⁴+ 2⁵ + 8⁶ + 8⁷ = 2360688 = 46288 * 51
+```
+```lua
+dig_pow(89, 1) -- should return 1 since 8¹ + 9² = 89 = 89 * 1
+dig_pow(92, 1) -- should return -1 since there is no k such as 9¹ + 2² equals 92 * k
+dig_pow(695, 2) -- should return 2 since 6² + 9³ + 5⁴= 1390 = 695 * 2
+dig_pow(46288, 3) -- should return 51 since 4³ + 6⁴+ 2⁵ + 8⁶ + 8⁷ = 2360688 = 46288 * 51
+```
