@@ -46,7 +46,7 @@ def auto_s x
     x.split("\n")
     .map{|x| 
         r = @r
-        x.gsub(r){ "assert.are.same(s(#{$1}, #{$2})), solution.dig_pow(#{$1}, #{$2}))" }
+        x.gsub(r){ "assert.are.same(s(#{$1}, #{$2}), solution.dig_pow(#{$1}, #{$2}))" }
     }
     .join("\n") + "\n"
 end
