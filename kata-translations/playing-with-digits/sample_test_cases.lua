@@ -1,9 +1,8 @@
 local solution = require 'solution'
-describe("Shape Area test set", function()
+describe("Playing with Digits sample test cases", function()
   it("Static tests", function()
-    assert.are.same(5, solution.shape_area(2))
-    assert.are.same(13, solution.shape_area(3))
-    assert.are.same(1, solution.shape_area(1))
-    assert.are.same(41, solution.shape_area(5))
+    assert.are.same(1, solution.dig_pow(89, 1))
+    assert.are.same(-1, solution.dig_pow(92, 1))
+    assert.are.same(51, solution.dig_pow(46288, 3))
   end)
 end)
