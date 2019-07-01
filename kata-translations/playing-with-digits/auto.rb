@@ -33,11 +33,11 @@ Test.assertEquals(digPow(132921, 3), 4)
 Test.assertEquals(digPow(10383, 6), 12933)
 FOO
 
-
+@r = /.*digPow\((\d+)\,\s+(\d+)\)\,\s+(-*\d+).*/
 def auto x
     x.split("\n")
     .map{|x| 
-        r = /.*(\d+)\,\s+(\d+)\)\,\s+(\d+).*/
+        r = @r
         x.gsub(r){ "assert.are.same(#{$3}, solution.dig_pow(#{$1}, #{$2}))" }
     }
     .join("\n") + "\n"
@@ -45,25 +45,32 @@ end
 def auto_s x
     x.split("\n")
     .map{|x| 
-        r = /.*(\d+)\,\s+(\d+)\)\,\s+(\d+).*/
+        r = @r
         x.gsub(r){ "assert.are.same(s(#{$1}, #{$2})), solution.dig_pow(#{$1}, #{$2}))" }
     }
     .join("\n") + "\n"
 end
 def auto_ruby x
-    x.split("\n")
+    a = x.split("\n")
     .map{|x| 
-        r = /.*(\[.*\]).*(true|false).*/
-        x.gsub(r){ "Test.assert_equals(validate_sequence(#{$1}), #{$2})" }
+        r = @r
+        z = x.match(@r)
+        [z[1],z[2]]
     }
-    .join("\n") + "\n"
+    first = a.map{|x,y| x[/\d+/].to_i}.uniq.sort
+    second = a.map{|x,y| y[/\d+/].to_i}.uniq.sort
+    "first #{first}, second #{second}}"
+    
 end
 
 
 
 
-# puts auto(input)
+puts auto_ruby(input)
+p "--------------------------------------------"
 puts auto(input)
 p "--------------------------------------------"
 puts auto_s(input)
+
+# from 80 till 1900
 
