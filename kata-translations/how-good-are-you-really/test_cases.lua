@@ -1,6 +1,4 @@
 local solution = require 'solution'
-
-
 local s1 = function(class_points, your_points)
   local avg =  0
   for name, mark in pairs(class_points) do
@@ -10,7 +8,6 @@ local s1 = function(class_points, your_points)
   if avg < your_points then return true
   else return false end
 end
-
 local s = function(class_points, your_points)
   local avg =  0
   for name, mark in pairs(class_points) do
@@ -19,12 +16,6 @@ local s = function(class_points, your_points)
   if avg < 0 then return true
   else return false end
 end
-
-
-
-
-
-
 describe("Better than average", function()
   it("Static tests", function()
     assert.are.same(true, solution.better_than_average({2, 3}, 5))
