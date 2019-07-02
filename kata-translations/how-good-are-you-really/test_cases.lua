@@ -10,6 +10,7 @@ local s1 = function(class_points, your_points)
   if avg < your_points then return true
   else return false end
 end
+
 local s = function(class_points, your_points)
   local avg =  0
   for name, mark in pairs(class_points) do
@@ -18,6 +19,7 @@ local s = function(class_points, your_points)
   if avg < 0 then return true
   else return false end
 end
+
 
 
 
@@ -50,12 +52,14 @@ describe("Better than average", function()
   it("Auto Success", function()
     for i=1,500,1 do
       local your = math.random(50,100)
+      local x = math.random(1,your-1)
       a,b,c, d = {}, {}, {}, {}
         for j=0, math.random(10,100), 1 do
-          table.insert(a,math.random(1, your-1))
-          table.insert(b,math.random(1, your-1))
-          table.insert(c,math.random(1, your-1))
-          table.insert(d,math.random(1, your-1))
+          x = math.random(1,your-1)
+          table.insert(a,x)
+          table.insert(b,x)
+          table.insert(c,x)
+          table.insert(d,x)
         end 
         assert.are.same(true, solution.better_than_average(a, your))
         assert.are.same(s1(d, your), solution.better_than_average(b, your))
@@ -65,14 +69,32 @@ describe("Better than average", function()
   it("Auto Fail", function()
     for i=1,500,1 do
       local your = math.random(1,49)
+      local x = math.random(your+1,100)
       a,b,c, d = {}, {}, {}, {}
         for j=0, math.random(10,100), 1 do
-          table.insert(a,math.random(your+1,100))
-          table.insert(b,math.random(your+1,100))
-          table.insert(c,math.random(your+1,100))
-          table.insert(d,math.random(your+1,100))
+          x = math.random(your+1,100)
+          table.insert(a,x)
+          table.insert(b,x)
+          table.insert(c,x)
+          table.insert(d,x)
         end 
         assert.are.same(false, solution.better_than_average(a, your))
+        assert.are.same(s1(d, your), solution.better_than_average(b, your))
+        assert.are.same(s(d,your), solution.better_than_average(c, your))
+    end
+  end)
+  it("Auto Success/Fail", function()
+    for i=1,500,1 do
+      local your = math.random(1,100)
+      local x = math.random(1,100)
+      a,b,c, d = {}, {}, {}, {}
+        for j=0, math.random(10,100), 1 do
+          x = math.random(1,100)
+          table.insert(a,x)
+          table.insert(b,x)
+          table.insert(c,x)
+          table.insert(d,x)
+        end 
         assert.are.same(s1(d, your), solution.better_than_average(b, your))
         assert.are.same(s(d,your), solution.better_than_average(c, your))
     end
