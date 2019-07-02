@@ -47,4 +47,19 @@ describe("Better than average", function()
     assert.are.same(s1({100, 40, 34, 57, 29, 72, 57, 88}, 75), solution.better_than_average({100, 40, 34, 57, 29, 72, 57, 88}, 75))
     assert.are.same(s1({12, 23, 34, 45, 56, 67, 78, 89, 90}, 69), solution.better_than_average({12, 23, 34, 45, 56, 67, 78, 89, 90}, 69))
   end)
+  it("Auto Success", function()
+    for i=1,500,1 do
+      local your = math.random(50,100)
+      a,b,c, d = {}, {}, {}, {}
+        for j=0, math.random(10,100), 1 do
+          table.insert(a,math.random(1, your-1))
+          table.insert(b,math.random(1, your-1))
+          table.insert(c,math.random(1, your-1))
+          table.insert(d,math.random(1, your-1))
+        end 
+        assert.are.same(true, solution.better_than_average(a, your))
+        assert.are.same(s1(d, your), solution.better_than_average(b, your))
+        assert.are.same(s(d,your), solution.better_than_average(c, your))
+    end
+  end)
 end)
