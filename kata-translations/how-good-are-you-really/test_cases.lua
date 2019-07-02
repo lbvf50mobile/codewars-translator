@@ -62,4 +62,19 @@ describe("Better than average", function()
         assert.are.same(s(d,your), solution.better_than_average(c, your))
     end
   end)
+  it("Auto Fail", function()
+    for i=1,500,1 do
+      local your = math.random(1,49)
+      a,b,c, d = {}, {}, {}, {}
+        for j=0, math.random(10,100), 1 do
+          table.insert(a,math.random(your+1,100))
+          table.insert(b,math.random(your+1,100))
+          table.insert(c,math.random(your+1,100))
+          table.insert(d,math.random(your+1,100))
+        end 
+        assert.are.same(false, solution.better_than_average(a, your))
+        assert.are.same(s1(d, your), solution.better_than_average(b, your))
+        assert.are.same(s(d,your), solution.better_than_average(c, your))
+    end
+  end)
 end)
