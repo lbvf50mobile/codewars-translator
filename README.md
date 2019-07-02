@@ -107,6 +107,10 @@ https://www.codewars.com/users/Unnamed
 
 - https://www.codewars.com/kata/playing-with-digits/ruby translated.
 
+`Tuesday 2019.07.02 July`
+
+- https://www.codewars.com/kata/convert-a-string-to-a-number/ruby translated
+
 
 # Lua translations
 
