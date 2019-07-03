@@ -1,21 +1,9 @@
 local solution = require 'solution'
--- let shapeArea = x => Math.pow(x,2) + Math.pow(x-1,2);
-local s = function(x) return math.pow(x,2) + math.pow(x-1,2) end
-describe("Shape Area test set", function()
+describe("Array sort tests", function()
   it("Static tests", function()
-    assert.are.same(5, solution.shape_area(2))
-    assert.are.same(13, solution.shape_area(3))
-    assert.are.same(1, solution.shape_area(1))
-    assert.are.same(41, solution.shape_area(5))
-
-    assert.are.same(s(2), solution.shape_area(2))
-    assert.are.same(s(3), solution.shape_area(3))
-    assert.are.same(s(1), solution.shape_area(1))
-    assert.are.same(s(5), solution.shape_area(5))
-  end)
-  it("Auto tests", function()
-    for i=1,10000,1 do
-      assert.are.same(s(i), solution.shape_area(i))
-    end
+    assert.are.same({1, 3, 8, 4, 5, 2, 11}, solution.sort_array({5, 3, 2, 8, 1, 4, 11}))
+    assert.are.same({22, 4, 1, 5, 2, 11, 37, 0}, solution.sort_array({2, 22, 37, 11, 4, 1, 5, 0}))
+    assert.are.same({1, 1, 5, 11, 2, 11, 111, 0}, solution.sort_array({1, 111, 11, 11, 2, 1, 5, 0}))
+    assert.are.same({}, solution.sort_array({}))
   end)
 end)
