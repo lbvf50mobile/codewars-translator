@@ -12,7 +12,6 @@ s = function(array)
     else insert = table.remove(odd,1) end
     table.insert(answer,insert)
   end
-  -- table.remove(t,1)
   return answer
 end
 function table.clone(org)
