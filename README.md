@@ -116,6 +116,11 @@ https://www.codewars.com/users/Unnamed
 
 - https://www.codewars.com/kata/sort-odd-and-even-numbers-in-different-order/javascript translated
 
+`Thursday 2019.07.04 July`
+
+- https://www.codewars.com/kata/sort-and-transform/solutions/javascript `refine` in **Ruby**.
+- https://www.codewars.com/kata/5d1dd2ba7c046b0023724882 
+
 
 # Lua translations
 
@@ -128,9 +133,10 @@ https://www.codewars.com/users/Unnamed
 - https://www.codewars.com/kata/find-numbers-which-are-divisible-by-given-number/train/javascript (`2019.03.08 Friday`)
 - https://www.codewars.com/kata/reversed-words (`translated 20190626 Wednesday`)
 - https://www.codewars.com/kata/playing-with-digits/ruby (`solved today want to translate 20190627 Thursday`, `translated in Monday 2019.07.01`)
-- https://www.codewars.com/kata/how-good-are-you-really/javascript (`solved 20190701 Monday July, translated 20190702 July`)
-- https://www.codewars.com/kata/convert-a-string-to-a-number/ruby (`solved/translated 20190702 July`)
+- https://www.codewars.com/kata/how-good-are-you-really/javascript (`solved 20190701 Monday July, translated 20190702 July, approved 20190704 Thursday`)
+- https://www.codewars.com/kata/convert-a-string-to-a-number/ruby (`solved/translated 20190702 July, approved 20190703 Wednesday July`)
 - https://www.codewars.com/kata/sort-odd-and-even-numbers-in-different-order/ruby (`solved 20190702 Tuesday July, translated 20190703 Wednesday July`)
+- https://www.codewars.com/kata/find-nearest-square-number/ruby (`solved 20190703 Wednesday July`)
 
 #  In Codewars
 - https://www.codewars.com/kata/51f2b4448cadf20ed0000386 https://www.codewars.com/kumite/5c52f69bbb637958bba592a2/edit 
