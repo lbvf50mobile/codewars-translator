@@ -137,6 +137,8 @@ https://www.codewars.com/users/Unnamed
 - https://www.codewars.com/kata/convert-a-string-to-a-number/ruby (`solved/translated 20190702 July, approved 20190703 Wednesday July`)
 - https://www.codewars.com/kata/sort-odd-and-even-numbers-in-different-order/ruby (`solved 20190702 Tuesday July, translated 20190703 Wednesday July`)
 - https://www.codewars.com/kata/find-nearest-square-number/ruby (`solved 20190703 Wednesday July`)
+- https://www.codewars.com/kata/maximum-length-difference/ruby (`JS, PHP, Crystal solved 20190705 Friday July`)
+- https://www.codewars.com/kata/583c5469977933319f000403/solutions/ruby (`JS, Ruby 20190705 Friday July`)
 
 #  In Codewars
 - https://www.codewars.com/kata/51f2b4448cadf20ed0000386 https://www.codewars.com/kumite/5c52f69bbb637958bba592a2/edit 
