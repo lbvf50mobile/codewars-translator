@@ -123,7 +123,8 @@ https://www.codewars.com/users/Unnamed
 
 `Saturday 2019.07.06 July`
 
-- https://www.codewars.com/kata/find-nearest-square-number/javascript
+- https://www.codewars.com/kata/find-nearest-square-number/javascript translated
+- https://www.codewars.com/kata/create-phone-number/ruby solved
 
 
 # Lua translations
@@ -143,6 +144,7 @@ https://www.codewars.com/users/Unnamed
 - https://www.codewars.com/kata/find-nearest-square-number/ruby (`solved 20190703 Wednesday July, translated 20190706 Saturday`)
 - https://www.codewars.com/kata/maximum-length-difference/ruby (`JS, PHP, Crystal solved 20190705 Friday July`)
 - https://www.codewars.com/kata/583c5469977933319f000403/solutions/ruby (`JS, Ruby 20190705 Friday July`)
+- https://www.codewars.com/kata/create-phone-number/ruby (`JS, Ruby solved 20190706 Satruday`)
 
 #  In Codewars
 - https://www.codewars.com/kata/51f2b4448cadf20ed0000386 https://www.codewars.com/kumite/5c52f69bbb637958bba592a2/edit 
