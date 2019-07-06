@@ -1,0 +1,10 @@
+local solution = require 'solution'
+describe("Find Nearest square number", function()
+  it("Static tests", function()
+    assert.are.same(1, solution.nearest_sq(1))
+    assert.are.same(1, solution.nearest_sq(2))
+    assert.are.same(9, solution.nearest_sq(10))
+    assert.are.same(121, solution.nearest_sq(111))
+    assert.are.same(10000, solution.nearest_sq(9999))
+  end)
+end)
