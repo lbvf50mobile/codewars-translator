@@ -121,6 +121,10 @@ https://www.codewars.com/users/Unnamed
 - https://www.codewars.com/kata/sort-and-transform/solutions/javascript `refine` in **Ruby**.
 - https://www.codewars.com/kata/5d1dd2ba7c046b0023724882 
 
+`Saturday 2019.07.06 July`
+
+- https://www.codewars.com/kata/find-nearest-square-number/javascript
+
 
 # Lua translations
 
@@ -136,7 +140,7 @@ https://www.codewars.com/users/Unnamed
 - https://www.codewars.com/kata/how-good-are-you-really/javascript (`solved 20190701 Monday July, translated 20190702 July, approved 20190704 Thursday`)
 - https://www.codewars.com/kata/convert-a-string-to-a-number/ruby (`solved/translated 20190702 July, approved 20190703 Wednesday July`)
 - https://www.codewars.com/kata/sort-odd-and-even-numbers-in-different-order/ruby (`solved 20190702 Tuesday July, translated 20190703 Wednesday July`)
-- https://www.codewars.com/kata/find-nearest-square-number/ruby (`solved 20190703 Wednesday July`)
+- https://www.codewars.com/kata/find-nearest-square-number/ruby (`solved 20190703 Wednesday July, translated 20190706 Saturday`)
 - https://www.codewars.com/kata/maximum-length-difference/ruby (`JS, PHP, Crystal solved 20190705 Friday July`)
 - https://www.codewars.com/kata/583c5469977933319f000403/solutions/ruby (`JS, Ruby 20190705 Friday July`)
 
