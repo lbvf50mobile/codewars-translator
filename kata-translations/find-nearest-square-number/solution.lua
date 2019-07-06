@@ -1,6 +1,6 @@
-  return {
-    shape_area = function(x)
-        -- Make it green, then make it clean :)
-        return math.pow(x,2) + math.pow(x-1,2)
-      end
-    }
+return {
+  nearest_sq = function(n)
+      -- Make it green, then make it clean :)
+      return math.pow(math.floor(math.sqrt(n)+0.5),2)
+    end
+  }
