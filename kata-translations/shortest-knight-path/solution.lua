@@ -1,5 +1,6 @@
 return {
   knight = function(start, finish)
+      --
       local c1 = function(s) return {string.byte(string.sub(s,1,1)) - string.byte('a') + 1,tonumber(string.sub(s,2,2))} end
       local c2 = function(a) return string.char(a[1] - 1 + string.byte('a') ) .. string.char(a[2] + string.byte('0')) end
       local on = function(a) return 1 <= a[1] and a[1] <= 8 and 1 <= a[2] and a[2] <= 8 end
