@@ -11,16 +11,25 @@ return {
         f1=true,f2=true,f3=true,f4=true,f5=true,f6=true,f7=true,f8=true,
         g1=true,g2=true,g3=true,g4=true,g5=true,g6=true,g7=true,g8=true,
         h1=true,h2=true,h3=true,h4=true,h5=true,h6=true,h7=true,h8=true} end
-      print(c1('a1')[1],c1('a1')[2])
-      ans = c1('b2')
-      print(c2(ans))
-      print(on({0,0}),on({1,8}), on({1,9}))
-
-      -- Make it green, then make it clean :)
-      if start == 'a1' and finish == 'c1' then return 2
-      elseif start == 'a1' and finish == 'f1' then return 3
-      elseif start == 'a1' and finish == 'f3' then return 3
-      elseif start == 'a1' and finish == 'f4' then return 4
-      else return 5 end
+      local b = board()
+      local q = {{start,0}}
+      local moves = {{1,2},{2,1},{2,-1},{1,-2},{-1,-2},{-2,-1},{-2,1},{-1,2}}
+      while 0 ~= #q do
+        local pos,step = table.unpack(table.remove(q,1))
+        print (pos,step, 'enter')
+        if pos == finish then return step end
+        local x,y = table.unpack(c1(pos))
+        print(x,y,'------------')
+        for key,delta in pairs(moves) do
+          local dx,dy = table.unpack(delta)
+          local pos = {x+dx, y+dy}
+          local cel = c2(pos)
+          if on(pos) and b[cel] then
+            b[cel] = false
+            print(cell,step+1,'<--- insert')
+            table.insert(q,{cell, step+1})
+          end
+        end
+      end
     end
   }
