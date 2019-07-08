@@ -1,21 +1,10 @@
 local solution = require 'solution'
--- let shapeArea = x => Math.pow(x,2) + Math.pow(x-1,2);
-local s = function(x) return math.pow(x,2) + math.pow(x-1,2) end
-describe("Shape Area test set", function()
+describe("Shortest Knight Path", function()
   it("Static tests", function()
-    assert.are.same(5, solution.shape_area(2))
-    assert.are.same(13, solution.shape_area(3))
-    assert.are.same(1, solution.shape_area(1))
-    assert.are.same(41, solution.shape_area(5))
-
-    assert.are.same(s(2), solution.shape_area(2))
-    assert.are.same(s(3), solution.shape_area(3))
-    assert.are.same(s(1), solution.shape_area(1))
-    assert.are.same(s(5), solution.shape_area(5))
-  end)
-  it("Auto tests", function()
-    for i=1,10000,1 do
-      assert.are.same(s(i), solution.shape_area(i))
+    local tests = {{'a1', 'c1', 2}, {'a1', 'f1', 3}, {'a1', 'f3', 3}, {'a1', 'f4', 4}, {'a1', 'f7', 5}}
+    for keys, values in pairs(tests) do
+      local start, finish, answer = table.unpack(values)
+      assert.are.same(answer, solution.knight(start, finish))
     end
   end)
 end)
