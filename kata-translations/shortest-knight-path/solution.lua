@@ -16,20 +16,16 @@ return {
       local moves = {{1,2},{2,1},{2,-1},{1,-2},{-1,-2},{-2,-1},{-2,1},{-1,2}}
       while 0 ~= #q do
         local pos,step = table.unpack(table.remove(q,1))
-        print (pos,step, 'enter')
         if pos == finish then return step end
         local x,y = table.unpack(c1(pos))
-        print(x,y,'------------')
         for key,delta in pairs(moves) do
           local dx,dy = table.unpack(delta)
           local nx,ny = x+dx, y+dy
           local pos = {x+dx, y+dy}
           local onb = on(pos)
-          print(nx,ny,onb,'----- new values')
           local cell = c2(pos)
           if onb and b[cell] then
             b[cell] = false
-            print(cell,step+1,'<--- insert')
             table.insert(q,{cell, step+1})
           end
         end
