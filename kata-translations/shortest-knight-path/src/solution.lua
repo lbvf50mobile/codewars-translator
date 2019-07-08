@@ -1,7 +1,11 @@
 return {
   knight = function(start, finish)
       local c1 = function(s) return {string.byte(string.sub(s,1,1)) - string.byte('a') + 1,tonumber(string.sub(s,2,2))} end
+      local c2 = function(a) return string.char(a[1] - 1 + string.byte('a') ) .. string.char(a[2] + string.byte('0')) end
       print(c1('a1')[1],c1('a1')[2])
+      ans = c1('a1')
+      print(c2(ans))
+
       -- Make it green, then make it clean :)
       if start == 'a1' and finish == 'c1' then return 2
       elseif start == 'a1' and finish == 'f1' then return 3
