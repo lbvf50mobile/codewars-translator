@@ -22,10 +22,13 @@ return {
         print(x,y,'------------')
         for key,delta in pairs(moves) do
           local dx,dy = table.unpack(delta)
+          local nx,ny = x+dx, y+dy
           local pos = {x+dx, y+dy}
-          local cel = c2(pos)
-          if on(pos) and b[cel] then
-            b[cel] = false
+          local onb = on(pos)
+          print(nx,ny,onb,'----- new values')
+          local cell = c2(pos)
+          if onb and b[cell] then
+            b[cell] = false
             print(cell,step+1,'<--- insert')
             table.insert(q,{cell, step+1})
           end
