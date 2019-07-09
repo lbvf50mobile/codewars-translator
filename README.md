@@ -133,6 +133,16 @@ https://www.codewars.com/users/Unnamed
 - **No Ruby translation** https://www.codewars.com/kata/path-finder-number-2-shortest-path/javascript (`JS solved 20190708`)
 - **No Ruby translation** https://www.codewars.com/kata/path-finder-number-1-can-you-reach-the-exit/javascript (`JS solved 20190708`)
 
+`Tuesday 2019.07.09 July`
+
+- crate TODO list and implement it's first step.
+
+# TODO
+
+-  Use regex as global variable in templates (**done 2019.07.09 Tuesday**)
+-  Add method name in `kata-boom.rb`
+-  Auto create template for `Auto tests` at the `test_cases.lua`  at the `alias.sh`
+
 
 # Lua translations
 
