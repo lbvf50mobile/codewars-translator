@@ -164,8 +164,8 @@ https://www.codewars.com/users/Unnamed
 - https://www.codewars.com/kata/create-phone-number/ruby (`JS, Ruby solved 20190706 Satruday`)
 - https://www.codewars.com/kata/average-array/ruby (`JS, Ruby solved 20190707`)
 - **4kyu** https://www.codewars.com/kata/shortest-knight-path/ruby (`JS, Ruby, solved/translated 20190708`)
-- **https://www.codewars.com/kata/path-finder-number-2-shortest-path/javascript (`JS solved 20190708`)
-- https://www.codewars.com/kata/5765870e190b1472ec0022a2 (`JS solved 20190708`)
+- **No Ruby translation**  https://www.codewars.com/kata/path-finder-number-2-shortest-path/javascript (`JS solved 20190708`)
+- **No Ruby translation**  https://www.codewars.com/kata/5765870e190b1472ec0022a2 (`JS solved 20190708`)
 
 #  In Codewars
 - https://www.codewars.com/kata/51f2b4448cadf20ed0000386 https://www.codewars.com/kumite/5c52f69bbb637958bba592a2/edit 
