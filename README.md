@@ -139,7 +139,7 @@ https://www.codewars.com/users/Unnamed
 
 # TODO
 
--  Use regex as global variable in templates (**done 2019.07.09 Tuesday**)
+-  Use regex as global variable in templates (**done 2019.07.09 Tuesday July**)
 -  Add method name in `kata-boom.rb`
 -  Auto create template for `Auto tests` at the `test_cases.lua`  at the `alias.sh`
 
