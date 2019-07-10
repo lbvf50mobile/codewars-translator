@@ -137,10 +137,14 @@ https://www.codewars.com/users/Unnamed
 
 - crate TODO list and implement it's first step.
 
+`Wednesday 2019.07.10 July`
+
+- Now `kata-boom.rb` also set a method name. It's a second part from the TODO, add `https://www.codewars.com/kata/path-finder-number-2-shortest-path/javascript`tempage into the `kata-translations`.
+
 # TODO
 
 -  Use regex as global variable in templates (**done 2019.07.09 Tuesday July**)
--  Add method name in `kata-boom.rb`
+-  Add method name in `kata-boom.rb` (**done 2019.07.10 Wendesday July**)
 -  Auto create template for `Auto tests` at the `test_cases.lua`  at the `alias.sh`
 
 

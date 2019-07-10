@@ -1,5 +1,5 @@
 local solution = require 'solution'
-describe("Shape Area test set", function()
+describe("shape_area20190710 test set", function()
   it("Static tests", function()
     assert.are.same(5, solution.shape_area20190710(2))
     assert.are.same(13, solution.shape_area20190710(3))
