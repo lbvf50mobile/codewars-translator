@@ -10,7 +10,7 @@ def auto x
     x.split("\n")
     .map{|x| 
         r = @regex
-        x.gsub(r){ "assert.are.same(#{$2}, solution.shape_area(#{$1}))" }
+        x.gsub(r){ "assert.are.same(#{$2}, solution.shape_area20190710(#{$1}))" }
     }
     .join("\n") + "\n"
 end

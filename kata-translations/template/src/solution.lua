@@ -1,5 +1,5 @@
 return {
-  shape_area = function(n)
+  shape_area20190710 = function(n)
       -- Make it green, then make it clean :)
       if 2 == n then return 5
       elseif 3 == n then return 13
